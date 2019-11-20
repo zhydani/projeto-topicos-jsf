@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+<h:head>
+	<title>TFTactics | Cadastro de Campeão</title>
+	<!-- Required meta tags -->
+	<meta charset="utf-8" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+	<!-- Bootstrap CSS -->
+	<h:outputStylesheet library="css" name="bootstrap.min.css" />
+	<!-- Costumize CSS -->
+	<h:outputStylesheet library="css" name="style.css" />
+	<link rel="shortcut icon" type="image/x-icon"
+		href="#{resource['images/icon.png']}" />
+</h:head>
+<h:body>
+	<h:form id="form">
+		<table width="100%">
+			<tr>
+
+				<td valign="top" class="bg-dark mt-0 text-white wrapper"
+					id="sidebar"><ui:insert name="menu">
+
+						<nav id="sidebar">
+						<div class="sidebar-header ">
+							<h3 class="font-weight-bold">Menu Administrador</h3>
+						</div>
+
+						<ul class="list-unstyled components">
+							<h:panelGrid columns="2">
+								<h:graphicImage class="ml-2 pb-3" width="30px" library="images"
+									name="usu.png" />
+								<h5 class="pl-2 pb-2">fulano</h5>
+							</h:panelGrid>
+							<li class="active"><a href="home.xhtml">Home</a></li>
+							<li><a href="campeao.xhtml">Cadastro de Campeão</a></li>
+							<li><a href="cadastroitem.xhtml">Cadastro de Item</a></li>
+							<li><a href="cadastrosubitem.xhtml">Cadastro de Item Básico</a></li>
+							<li><a href="consultajogador.xhtml">Consulta de Jogadores</a></li>
+							<li><a href="login.xhtml">Login</a></li>
+							<li><a href="sobre.xhtml">Sobre</a></li>
+
+						</ul>
+
+
+						</nav>
+					</ui:insert></td>
+
+
+			</tr>
+
+			<tr>
+				<td colspan="2" align="center" class="mar"><ui:insert
+						name="cabecalho">
+						<h:form>
+							<div class="navbar navbar-dark bg-primary navbar-expand">
+								<div class="container collapse navbar-collapse">
+
+									<div class="navbar-brand font-weight-bold ">TFTactics</div>
+									<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+									
+									</ul>
+
+
+								</div>
+							</div>
+						</h:form>
+					</ui:insert></td>
+			</tr>
+
+			<tr>
+				<td valign="top" class="pt-5  content active mar"><ui:insert
+						name="conteudo">
+						<div class="container">
+							<h:form id="formPrincipal">
+								<h:messages id="messages" infoStyle="color:green"
+									warnStyle="color:orange" errorStyle="color:red"
+									globalOnly="false" />
+							
+
+									<h3>Página Inicial</h3>
+									<hr class="pb-3"></hr>
+									<h:graphicImage class="ml-2 pb-3" width="1100px" library="images"
+									name="tft3.png" />
+								
+							</h:form>
+						</div>
+
+
+
+
+					</ui:insert></td>
+			</tr>
+		</table>
+	</h:form>
+
+	<script>
+		function goBack() {
+			window.history.back();
+		}
+	</script>
+</h:body>
+</html>
